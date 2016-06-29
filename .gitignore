@@ -1,12 +1,18 @@
-auto-ccld.sh
-compile
-eratspeed
-eratspeed.o
-find-systype
-fs64.o
+# Common files
 hasgethr.h
 hasrdtsc.h
 int64.h
+primegen.h
+uint32.h
+uint64.h
+
+# Unix specific files
+*.a
+*.o
+auto-ccld.sh
+compile
+eratspeed
+find-systype
 load
 make-compile
 make-load
@@ -14,20 +20,19 @@ make-makelib
 makelib
 primegaps
 primegaps.0
-primegaps.o
 primegen.0
-primegen.a
-primegen.h
-primegen.o
-primegen_init.o
-primegen_next.o
-primegen_skip.o
 primes
 primes.0
-primes.o
 primespeed
 primespeed.0
-primespeed.o
 systype
-uint32.h
-uint64.h
+
+# Windows specific files
+*.exe
+*.lib
+*.obj
+
+# SCons specific files
+.sconsign.dblite
+.sconf_temp/
+config.log
